@@ -9,7 +9,7 @@ return {
   -- we use `config =` rather than `opts =` so that lazy.nvim doesn’t try to call
   -- `require("nvim-treesitter").setup(...)` (which would be incorrect) :contentReference[oaicite:2]{index=2}
   config = function()
-    local configs = require("nvim-treesitter.configs")
+    local configs = require("nvim-treesitter")
     configs.setup({
       ensure_installed = { "lua", "vim", "html", "css", "javascript", "c", "python" },  -- etc
       sync_install = false,
